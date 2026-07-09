@@ -1,0 +1,14 @@
+:root {
+  --primary-blue: #667eea;
+  --secondary-purple: #764ba2;
+
+  --text-dark: #333;
+  --text-light: #666;
+  --text-medium: #555;
+
+  --bg-whiteL: #ffffff;
+}
+
+.portfolio-card {
+  font-family: "Arial", sans-serif;
+}
