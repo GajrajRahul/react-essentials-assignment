@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.bollywood-movies {
+  padding: 2rem;
+  text-align: center;
+}
+
+.bollywood-movies h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #ffc107;
+  text-shadow: 2px 2px 5px #000;
+}
+
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.movie-card {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+.movie-poster {
+  position: relative;
+}
+
+.movie-favorite {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  right: 5px;
+  top: 5px;
+  cursor:pointer;
+}
+
+.movie-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.movie-title {
+  font-size: 1.3rem;
+  color: #ffc107;
+  margin-bottom: 0.3rem;
+}
+
+.movie-year,
+.movie-genre,
+.movie-director,
+.movie-cast {
+  font-size: 0.95rem;
+  margin: 0.2rem 0;
+  color: #ccc;
+}
+
+.movie-rating {
+  margin-top: 0.7rem;
+  font-weight: bold;
+  padding: 0.4rem;
+  border-radius: 8px;
+}
+
+.rating-blockbuster {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.rating-superhit {
+  background-color: #17a2b8;
+  color: #fff;
+}
+
+.rating-hit {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.rating-average {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.search-section {
+  margin-bottom: 2rem;
+}
+
+.search-input {
+  width: 68%;
+  max-width: 400px;
+  padding: 0.8rem 1rem;
+  border-radius: 25px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease;
+}
+
+.search-input:focus {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.search-results {
+  margin-top: 0.8rem;
+  font-size: 0.95rem;
+  color: #ffcc00;
+}
+
+.filter-section {
+  margin-bottom: 2rem;
+}
+
+.filter-section h4 {
+  margin-bottom: 0.5rem;
+  color: #ffdd57;
+  font-weight: 600;
+}
+
+.genre-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.genre-button, .favorite-button {
+  padding: 0.5rem 0.5rem;
+  border: 2px solid #ffcc00;
+  background-color: transparent;
+  color: #ffcc00;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.genre-button:hover, .favorite-button:hover {
+  background-color: #ffcc00;
+  color: #000;
+}
+
+.genre-button.active, .favorite-button.active {
+  background-color: #ffcc00;
+  color: #000;
+  font-weight: bold;
+}
+
+.sort-favorite-section  {
+  margin: 1.5rem 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.sort-section label {
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  color: #ffcc00;
+  font-weight: 500;
+}
+
+.sort-section select {
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  border: 2px solid #ffcc00;
+  background: transparent;
+  color: #ffcc00;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.3s ease;
+}
+
+.sort-section select:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.clear-filters {
+  display: block;
+  margin: 1rem auto 1rem auto;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 25px;
+  background-color: #ffcc00;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.clear-filters:hover {
+  background-color: #e6b800;
+}
+
+.empty-state {
+  text-align: center;
+  margin-top: 2rem;
+  color: #ccc;
+}
+
+.empty-state h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  color: #ff6666;
+}
+
+.empty-state p {
+  font-size: 1rem;
+  color: #aaa;
+}
