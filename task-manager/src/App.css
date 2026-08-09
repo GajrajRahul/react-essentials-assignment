@@ -181,6 +181,16 @@ body {
   transition: all 0.3s ease;
 }
 
+.filter-section {
+  position: relative;
+}
+
+.filter-section label {
+  position: absolute;
+  top: -1.1rem;
+  font-size: 14px;
+}
+
 .filter-buttons {
   display: flex;
   gap: 0.5rem;
